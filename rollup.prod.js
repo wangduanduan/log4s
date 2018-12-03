@@ -11,7 +11,8 @@ export default [
     output: {
       name: 'howLongUntilLunch',
       file: pkg.browser,
-      format: 'umd'
+      format: 'umd',
+      banner: `/*@preserve ${pkg.name} version ${pkg.version}*/`
     },
     plugins: [
       resolve(),
@@ -19,7 +20,11 @@ export default [
       babel({
         exclude: 'node_modules/**'
       }),
-      uglify(),
+      uglify({
+        output: {
+          comments: 'some'
+        }
+      }),
       filesize()
     ]
   },
