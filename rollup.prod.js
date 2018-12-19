@@ -9,7 +9,7 @@ export default [
   {
     input: 'src/main.js',
     output: {
-      name: 'howLongUntilLunch',
+      name: 'Log4s',
       file: pkg.browser,
       format: 'umd',
       banner: `/*@preserve ${pkg.name} version ${pkg.version}*/`
@@ -20,17 +20,16 @@ export default [
       babel({
         exclude: 'node_modules/**'
       }),
-      uglify({
-        output: {
-          comments: 'some'
-        }
-      }),
+      // uglify({
+      //   output: {
+      //     comments: 'some'
+      //   }
+      // }),
       filesize()
     ]
   },
   {
     input: 'src/main.js',
-    external: ['ms'],
     output: [{
       file: pkg.main,
       format: 'cjs'

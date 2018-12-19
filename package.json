@@ -1,11 +1,10 @@
 {
-  "name": "rollup-starter-lib",
+  "name": "Log4s",
   "version": "1.0.0",
-  "main": "dist/how-long-till-lunch.cjs.js",
-  "module": "dist/how-long-till-lunch.esm.js",
-  "browser": "dist/how-long-till-lunch.umd.js",
+  "main": "dist/log4s.cjs.js",
+  "module": "dist/log4s.esm.js",
+  "browser": "dist/log4s.umd.js",
   "dependencies": {
-    "ms": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -18,9 +17,9 @@
     "rollup-plugin-uglify": "^6.0.0"
   },
   "scripts": {
-    "bo": "rollup -c rollup.dev.js",
-    "bw": "rollup -w -c rollup.dev.js",
-    "bp": "rollup -c rollup.prod.js",
+    "build:dev": "rollup -c rollup.dev.js",
+    "build:watch": "rollup -w -c rollup.dev.js",
+    "build:prd": "rollup -c rollup.prod.js",
     "test": "node test/test.js",
     "pretest": "npm run build"
   },
