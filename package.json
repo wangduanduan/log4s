@@ -1,6 +1,6 @@
 {
-  "name": "Log4s",
-  "version": "1.0.0",
+  "name": "log4s",
+  "version": "1.0.2",
   "main": "dist/log4s.cjs.js",
   "module": "dist/log4s.esm.js",
   "browser": "dist/log4s.umd.js",
@@ -25,5 +25,15 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangduanduan/log4s.git"
+  },
+  "author": "wangduanduan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangduanduan/log4s/issues"
+  },
+  "homepage": "https://github.com/wangduanduan/log4s"
 }

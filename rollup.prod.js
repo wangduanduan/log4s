@@ -20,11 +20,11 @@ export default [
       babel({
         exclude: 'node_modules/**'
       }),
-      // uglify({
-      //   output: {
-      //     comments: 'some'
-      //   }
-      // }),
+      uglify({
+        output: {
+          comments: 'some'
+        }
+      }),
       filesize()
     ]
   },
